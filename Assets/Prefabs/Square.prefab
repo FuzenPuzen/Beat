@@ -95,5 +95,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af099f68b66498f4c9d9be421ceeba15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yScale: 3
-  scaleSpeed: 5
+  yScale: 1.5
+  scaleSpeed: 2

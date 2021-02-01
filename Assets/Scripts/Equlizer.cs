@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class Equlizer : MonoBehaviour
 {
+    [Range(0,1)] 
+    [SerializeField] float speed;
     [SerializeField] List<GameObject> beats;
+    
     int i;
 
     void Start()
@@ -32,7 +35,7 @@ public class Equlizer : MonoBehaviour
 
     public IEnumerator Timer()
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(speed);
         i++;
         Go();
     }

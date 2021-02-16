@@ -30,7 +30,7 @@ public class LineSpawn : MonoBehaviour
             if (i < startFreeSpace || i > startFreeSpace + freeSpace)
             {
                 bubsObj = Instantiate(bubsPb, transform);
-                bubsObj.transform.position = new Vector3(spawnStartPoint + spawnOffset * i, 0, 0);
+                bubsObj.transform.localPosition = new Vector3(spawnStartPoint + spawnOffset * i, 0, 0);
             }
         } 
     }

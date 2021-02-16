@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LineInfo : MonoBehaviour
 {
+    [SerializeField] private float speed;
     void Start()
     {
         
@@ -11,7 +12,8 @@ public class LineInfo : MonoBehaviour
 
     void Update()
     {
-        transform.position += transform.up * -3 * Time.deltaTime;
+        transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, -30, 0), speed * Time.deltaTime);
+        //transform.position += transform.up * -speed * Time.deltaTime;
     }
 
 }

@@ -9,34 +9,51 @@ public class Equlizer : MonoBehaviour
     [SerializeField] List<GameObject> beats;
     
     int i;
+    int k;
 
     void Start()
     {
         i = -1;
+        k = 4;
         StartCoroutine(Timer());
     }
 
 
-    public void replay()
+    public void Replay()
     {
         i = -1;
         StartCoroutine(Timer());
     }
+
+    public void MultiReplay()
+    {
+        StartCoroutine(RecurcionTime());
+    }
+
+    public IEnumerator RecurcionTime()
+    {
+        yield return new WaitForSeconds(4f);
+        if (k > 0)
+        { 
+            MultiReplay();
+            Replay();
+            k--;
+        }
+    }
+
     public void Go()
     {
         beats[i].GetComponent<Scalling>().StartScalling();
         StartCoroutine(Timer());
     }
 
-    void Update()
-    {
-        
-    }
-
     public IEnumerator Timer()
     {
         yield return new WaitForSeconds(speed);
-        i++;
-        Go();
+        if (i < transform.childCount)
+        {
+            i++;
+            Go();
+        }
     }
 }

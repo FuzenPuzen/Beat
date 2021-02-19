@@ -86,51 +86,51 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11822}
+      Script: {instanceID: 11820}
     - Class: 114
-      Script: {instanceID: 11990}
+      Script: {instanceID: 11988}
     - Class: 114
-      Script: {instanceID: 12100}
+      Script: {instanceID: 12098}
     - Class: 114
-      Script: {instanceID: 12134}
+      Script: {instanceID: 12132}
     - Class: 114
-      Script: {instanceID: 12188}
+      Script: {instanceID: 12186}
     - Class: 114
-      Script: {instanceID: 12254}
+      Script: {instanceID: 12252}
     - Class: 114
-      Script: {instanceID: 12540}
+      Script: {instanceID: 12538}
     - Class: 114
-      Script: {instanceID: 12638}
+      Script: {instanceID: 12636}
     - Class: 114
-      Script: {instanceID: 12810}
+      Script: {instanceID: 12808}
     - Class: 114
-      Script: {instanceID: 12906}
+      Script: {instanceID: 12904}
     - Class: 114
-      Script: {instanceID: 13058}
+      Script: {instanceID: 13056}
     - Class: 114
-      Script: {instanceID: 13088}
+      Script: {instanceID: 13086}
     - Class: 114
-      Script: {instanceID: 13630}
+      Script: {instanceID: 13628}
     - Class: 114
-      Script: {instanceID: 13690}
+      Script: {instanceID: 13688}
     - Class: 114
-      Script: {instanceID: 13778}
+      Script: {instanceID: 13776}
     - Class: 114
-      Script: {instanceID: 14332}
+      Script: {instanceID: 14330}
     - Class: 114
-      Script: {instanceID: 14460}
+      Script: {instanceID: 14458}
     - Class: 114
-      Script: {instanceID: 14512}
+      Script: {instanceID: 14510}
     - Class: 114
-      Script: {instanceID: 14664}
+      Script: {instanceID: 14662}
     - Class: 114
-      Script: {instanceID: 14976}
+      Script: {instanceID: 14974}
     - Class: 114
-      Script: {instanceID: 15152}
+      Script: {instanceID: 15150}
     - Class: 114
-      Script: {instanceID: 15228}
+      Script: {instanceID: 15226}
     - Class: 114
-      Script: {instanceID: 15280}
+      Script: {instanceID: 15278}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -336,7 +336,7 @@ ScriptsOnlyBuild:
     className: CinemachinePixelPerfect
   - hash:
       serializedVersion: 2
-      Hash: b17dce68c0c8ab022b206dd707ea3854
+      Hash: 6c1ba480d0a55de09fa32b758303974a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerInfo
@@ -438,7 +438,7 @@ ScriptsOnlyBuild:
     className: GameController
   - hash:
       serializedVersion: 2
-      Hash: 07b53e0c592675071efa7b6f872a6fa9
+      Hash: a1a561d1b7c7e0fe4ff8ac85db950205
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PointDrag
@@ -739,4 +739,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/Samples.unity
-  playerPath: "C:/Users/\u0414\u043E\u043D\u0447\u0443\u043A\u043E\u0432/Desktop/AddedPause.apk"
+  playerPath: "C:/Users/\u0414\u043E\u043D\u0447\u0443\u043A\u043E\u0432/Desktop/AddedTrail.apk"

@@ -9,7 +9,8 @@ public class PointDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     [SerializeField] GameObject player;
     [SerializeField] GameObject music;
     [SerializeField] AudioSource pauseMusic;
-    [SerializeField] GameObject pauseBack;
+    [SerializeField] public GameObject pauseBack;
+    [SerializeField] float slowSpeed;
     public bool canDrag;
     Vector3 prevPos;
 
@@ -36,11 +37,7 @@ public class PointDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     {
         if (canDrag)
         {
-            pauseBack.SetActive(false);
-            pauseMusic.volume = 0;
-            music.GetComponent<AudioSource>().pitch = 1f;
-            music.GetComponent<AudioSource>().volume = 1;
-            Time.timeScale = 1f;
+            UnPause();
             prevPos = Camera.main.ScreenToWorldPoint(eventData.position);
             prevPos = new Vector3(prevPos.x, prevPos.y, 0);
         }
@@ -48,12 +45,26 @@ public class PointDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 
     public void OnPointerUp(PointerEventData eventData)
     {
+        if (player.GetComponent<PlayerInfo>().canPause)
+            SetPause();
+    }
+
+    public void UnPause()
+    {
+        pauseBack.SetActive(false);
+        pauseMusic.volume = 0;
+        music.GetComponent<AudioSource>().pitch = 1f;
+        music.GetComponent<AudioSource>().volume = 1;
+        Time.timeScale = 1f;
+    }
+    public void SetPause()
+    {        
         pauseBack.SetActive(true);
-        music.GetComponent<AudioSource>().pitch = 0.1f;
+        music.GetComponent<AudioSource>().pitch = slowSpeed;
         music.GetComponent<AudioSource>().volume = 0;
         pauseMusic.volume = 1;
         pauseMusic.Play();
-        Time.timeScale = 0.1f;
+        Time.timeScale = slowSpeed;
     }
 
     public void OnBeginDrag(PointerEventData eventData)

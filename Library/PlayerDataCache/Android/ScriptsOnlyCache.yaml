@@ -7,6 +7,7 @@ ScriptsOnlyBuild:
     - Equlizer
     - FatLine
     - GameController
+    - Learping
     - LineController
     - LineInfo
     - LineSpawn
@@ -15,6 +16,7 @@ ScriptsOnlyBuild:
     - Scalling
     - TimeLord
     - Timer
+    - TimerDesink
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
@@ -123,6 +125,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 15222}
     - Class: 114
       Script: {instanceID: 15274}
+    - Class: 114
+      Script: {instanceID: 136544}
+    - Class: 114
+      Script: {instanceID: 204154}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -716,8 +722,20 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LineSpawn
+  - hash:
+      serializedVersion: 2
+      Hash: 79f1e4d923cfc803b34c05ae2cb73dac
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TimerDesink
+  - hash:
+      serializedVersion: 2
+      Hash: 294f0478c58131634ea854f46b385a8f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Learping
   platform: 13
   scenePathNames:
   - Assets/Scenes/Samples.unity
-  playerPath: "C:/Users/\u0414\u043E\u043D\u0447\u0443\u043A\u043E\u0432/Desktop/Fix
-    Some Metric.apk"
+  playerPath: "C:/Users/\u0414\u043E\u043D\u0447\u0443\u043A\u043E\u0432/Desktop/Fex
+    new Lines.apk"

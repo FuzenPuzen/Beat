@@ -45,7 +45,7 @@ public class PlayerInfo : MonoBehaviour
         deathSound.GetComponent<AudioSource>().Play();
         Handheld.Vibrate();
         transform.GetComponent<SpriteRenderer>().color = new Color(0,0,0,0);
-        transform.GetComponent<CircleCollider2D>().enabled = false;
+        transform.GetComponent<PolygonCollider2D>().enabled = false;
         Instantiate(particle, transform);
         Time.timeScale = 0.2f;
         pointDrag.canDrag = false;

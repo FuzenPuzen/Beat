@@ -57,8 +57,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BulletStorm.cs" />
+    <Compile Include="Assets\Scripts\Destruction.cs" />
     <Compile Include="Assets\Scripts\BulletInfo.cs" />
     <Compile Include="Assets\Scripts\PlayerInfo.cs" />
+    <Compile Include="Assets\Scripts\FatLine.cs" />
     <Compile Include="Assets\Scripts\LineController.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\PointDrag.cs" />
@@ -67,8 +69,8 @@
     <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\Equlizer.cs" />
     <Compile Include="Assets\Scripts\LineSpawn.cs" />
-    <Compile Include="Assets\Scripts\Destruction.cs" />
-    <Compile Include="Assets\Scripts\FatLine.cs" />
+    <Compile Include="Assets\Scripts\TimeLord.cs" />
+    <Compile Include="Assets\Scripts\Vibrate.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

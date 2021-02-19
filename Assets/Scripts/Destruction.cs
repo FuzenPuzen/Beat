@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Destruction : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] float timeToDeath;
     void Start()
     {
-        
+        StartCoroutine(UntilDestroy());
     }
 
-    // Update is called once per frame
-    void Update()
+    private IEnumerator UntilDestroy()
     {
-        
+        yield return new WaitForSeconds(timeToDeath);
+        Destroy(gameObject);
     }
 }

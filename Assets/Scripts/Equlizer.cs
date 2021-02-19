@@ -50,7 +50,7 @@ public class Equlizer : MonoBehaviour
     public IEnumerator Timer()
     {
         yield return new WaitForSeconds(speed);
-        if (i < transform.childCount)
+        if (i < transform.childCount - 1)
         {
             i++;
             Go();

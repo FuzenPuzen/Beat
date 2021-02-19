@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class FatLine : MonoBehaviour
 {
+    [SerializeField] GameObject sprite;
 
     void Start()
     {
-        
+
     }
 
 

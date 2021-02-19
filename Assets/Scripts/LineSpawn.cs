@@ -16,7 +16,7 @@ public class LineSpawn : MonoBehaviour
     float spawnStartPoint;
     void Start()
     {
-        freeSpace = Random.Range(4, 10);
+        freeSpace = Random.Range(6, 10);
         startFreeSpace = Random.Range(1, bubCount - freeSpace);
         spawnOffset = bubsPb.GetComponent<SpriteRenderer>().bounds.size.x;
         spawnStartPoint = -3;

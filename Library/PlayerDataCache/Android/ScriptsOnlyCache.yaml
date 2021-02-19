@@ -114,21 +114,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13776}
     - Class: 114
-      Script: {instanceID: 14456}
+      Script: {instanceID: 14330}
     - Class: 114
-      Script: {instanceID: 14508}
+      Script: {instanceID: 14458}
     - Class: 114
-      Script: {instanceID: 14660}
+      Script: {instanceID: 14510}
     - Class: 114
-      Script: {instanceID: 15146}
+      Script: {instanceID: 14662}
     - Class: 114
-      Script: {instanceID: 15222}
+      Script: {instanceID: 14974}
     - Class: 114
-      Script: {instanceID: 15274}
+      Script: {instanceID: 15150}
     - Class: 114
-      Script: {instanceID: 136544}
+      Script: {instanceID: 15226}
     - Class: 114
-      Script: {instanceID: 204154}
+      Script: {instanceID: 15278}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -436,7 +436,7 @@ ScriptsOnlyBuild:
     className: GameController
   - hash:
       serializedVersion: 2
-      Hash: bfe26c9b6f9ac8fcd4bb209b201188a8
+      Hash: 31c031706accd36eac57985adad3c450
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PointDrag
@@ -568,6 +568,12 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: 79f1e4d923cfc803b34c05ae2cb73dac
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TimerDesink
+  - hash:
+      serializedVersion: 2
       Hash: 760787567e1b60d64a3e421ab83ee14a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -620,6 +626,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshPro
+  - hash:
+      serializedVersion: 2
+      Hash: 294f0478c58131634ea854f46b385a8f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Learping
   - hash:
       serializedVersion: 2
       Hash: 3165968ba45c74472d279ba04455fccb
@@ -722,20 +734,7 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LineSpawn
-  - hash:
-      serializedVersion: 2
-      Hash: 79f1e4d923cfc803b34c05ae2cb73dac
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TimerDesink
-  - hash:
-      serializedVersion: 2
-      Hash: 294f0478c58131634ea854f46b385a8f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Learping
   platform: 13
   scenePathNames:
   - Assets/Scenes/Samples.unity
-  playerPath: "C:/Users/\u0414\u043E\u043D\u0447\u0443\u043A\u043E\u0432/Desktop/Fex
-    new Lines.apk"
+  playerPath: "C:/Users/\u0414\u043E\u043D\u0447\u0443\u043A\u043E\u0432/Desktop/AddedPause.apk"

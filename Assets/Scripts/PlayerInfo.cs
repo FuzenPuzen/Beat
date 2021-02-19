@@ -10,6 +10,7 @@ public class PlayerInfo : MonoBehaviour
     [SerializeField] bool invinsible;
     [SerializeField] GameObject music;
     [SerializeField] GameObject deathSound;
+    
 
 
     void Start()

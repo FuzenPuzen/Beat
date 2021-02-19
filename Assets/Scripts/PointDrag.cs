@@ -4,14 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class PointDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerDownHandler
+public class PointDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerDownHandler, IPointerUpHandler
 {
     [SerializeField] GameObject player;
-    [SerializeField] Vector3 Offset;
+    [SerializeField] GameObject music;
+    [SerializeField] AudioSource pauseMusic;
     public bool canDrag;
     Vector3 prevPos;
 
-    // Start is called before the first frame update
+
     void Start()
     {
         canDrag = true;
@@ -34,16 +35,28 @@ public class PointDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     {
         if (canDrag)
         {
-            // Vector3 buff = Camera.main.ScreenToWorldPoint(eventData.position);
-            //touch.transform.position = buff + Offset;
+            pauseMusic.volume = 0;
+            music.GetComponent<AudioSource>().pitch = 1f;
+            music.GetComponent<AudioSource>().volume = 1;
+            Time.timeScale = 1f;
             prevPos = Camera.main.ScreenToWorldPoint(eventData.position);
             prevPos = new Vector3(prevPos.x, prevPos.y, 0);
         }
     }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        music.GetComponent<AudioSource>().pitch = 0.1f;
+        music.GetComponent<AudioSource>().volume = 0;
+        pauseMusic.volume = 1;
+        pauseMusic.Play();
+        Time.timeScale = 0.1f;
+
+    }
+
     public void OnBeginDrag(PointerEventData eventData)
     {
-        //touch.GetComponent<TrailRenderer>().enabled = false;
-        //touch.GetComponent<TrailRenderer>().enabled = true;
+
     }
 
     public void OnEndDrag(PointerEventData eventData)

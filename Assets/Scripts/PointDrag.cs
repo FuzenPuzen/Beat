@@ -9,6 +9,7 @@ public class PointDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     [SerializeField] GameObject player;
     [SerializeField] GameObject music;
     [SerializeField] AudioSource pauseMusic;
+    [SerializeField] GameObject pauseBack;
     public bool canDrag;
     Vector3 prevPos;
 
@@ -35,6 +36,7 @@ public class PointDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     {
         if (canDrag)
         {
+            pauseBack.SetActive(false);
             pauseMusic.volume = 0;
             music.GetComponent<AudioSource>().pitch = 1f;
             music.GetComponent<AudioSource>().volume = 1;
@@ -46,12 +48,12 @@ public class PointDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 
     public void OnPointerUp(PointerEventData eventData)
     {
+        pauseBack.SetActive(true);
         music.GetComponent<AudioSource>().pitch = 0.1f;
         music.GetComponent<AudioSource>().volume = 0;
         pauseMusic.volume = 1;
         pauseMusic.Play();
         Time.timeScale = 0.1f;
-
     }
 
     public void OnBeginDrag(PointerEventData eventData)
